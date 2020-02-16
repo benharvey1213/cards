@@ -1,0 +1,477 @@
+* {
+    /* margin-top: 0.5%; */
+    margin-top: auto;
+
+    /* prevents text highlighting */
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Opera and Firefox */
+}
+
+html, body {width:100%; height:100%; margin:0}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 35px;
+    background-color: #fed88f;
+    /* background-color: rgb(46, 46, 46); */
+}
+
+.client-wrapper {
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    background-color: rgb(241, 241, 241);
+    border-radius: 20px;
+}
+
+.header-area {
+    /* display: flex;
+    justify-content: center; */
+    text-align: center;
+    
+}
+
+.prompt {
+    /* width: 88%; */
+    width: 100%;
+
+    /* min-width: 88%; */
+
+    height: 8%;
+    margin: auto;
+    /* margin-top: 1%; */
+    padding: 10px;
+    /* background-color: rgb(260, 260, 260); */
+    background-color: rgb(51, 51, 51);
+    border-radius: 20px;
+    /* color: rgb(48, 48, 48); */
+    color: white;
+    text-align: center;
+    
+    margin-bottom: 10px;
+
+    display: inline-block;
+    /* vertical-align: middle; */
+    /* font-size: 100%; */
+}
+
+.client-prompt {
+    width: 88%;
+    height: 8%;
+    margin: auto;
+    padding: 10px;
+    background-color: rgb(51, 51, 51);
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.settings {
+    background-color: white;
+    margin-bottom: 0px;
+    height: 50px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#settingsimg {
+    display: inline-block;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.wrapper {
+    display: inline-block;
+    width: auto;
+}
+
+.settings-bg-modal {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    /* justify-content: center;
+    align-items: center; */
+    display: none;
+
+    /* display: flex; */
+
+    /* pointer-events: none; */
+    /* background: none; */
+}
+
+.settings-modal-content {
+    width: 50%;
+    max-width: 400px;
+    height: auto;
+    margin: auto;
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    justify-content: center;
+    cursor: auto;
+    /* pointer-events: none; */
+}
+
+.boxes {
+    display: block;
+    margin-bottom: 15px;
+    align-content: center;
+    font-size: 22px;
+    position: relative;
+
+}
+
+.boxes:hover {
+    visibility: visible;
+}
+
+.check {
+    -webkit-appearance: none;
+	background-color: #ffffff;
+	border: 1px solid #cacece;
+	padding: 9px;
+	border-radius: 3px;
+	display: inline-block;
+    /* position: relative; */
+    outline: none;
+    margin: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.check:checked {
+    /* background-color: #c8cbcc; */
+	color: #99a1a7;
+}
+
+.check:checked:after {
+    content: '\2713';
+    font-weight: bolder;
+	font-size: 14px;
+	position: absolute;
+	top: 4px;
+	left: 9px;
+	color: #3f3c3c;
+} 
+
+.checkText {
+    display: inline-flex;
+    position: absolute;
+    top: -1px;
+    margin-left: 8px;
+}
+
+.nav {
+    align-content: right;
+    padding-inline-end: 12px;
+    /* justify-content: right; */
+}
+
+#x {
+    cursor: pointer;
+    width: fit-content;
+    margin-left: auto;
+    font-size: 30px;
+    /* float: right; */
+}
+
+.tooltipText {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.card-area {
+    /* margin: 10px; */
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-right: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+.card-area:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.card {
+    width: 90%;
+    margin: 1.5%;
+    border-radius: 20px;
+    padding: 18px;
+    border: none;
+    outline: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    text-align: left;
+    cursor: pointer;
+
+    animation: fadein 1s;
+    animation-fill-mode: forwards;
+
+    /* transform: scale(2) rotate(-30deg); */
+
+    background-color: rgb(260, 260, 260);
+    color: rgb(48, 48, 48);
+
+    --starting-angle: 0deg;
+}
+
+/*
+.static {
+    /* --w: 90%;
+    width: var(--w);
+    height: var(--w); 
+    height: 90vw;
+    width: 90vw;
+}
+*/
+
+.static:hover{
+    transform: none;
+    cursor: crosshair;
+}
+
+@keyframes zoomIn {
+    0% {
+        /* transform: scale(0.2) rotate(320deg); */
+        /* transform: scale(2) rotate(335deg); */
+        /* Make a randomization for the rotation */
+
+        transform: scale(2.2) rotate(var(--starting-angle));
+        
+        /* transform: initial; */
+    }
+    100% {
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* @keyframes zoom {
+    from { size: 20%; }
+    to { size: 100% }
+} */
+
+.cardInput {
+    border-style: none;
+    width: 97%;
+    height: 50px;
+    /* margin-bottom: 12%; */
+    margin-bottom: 5%;
+    margin-top: 3%;
+    font-size: 35px;
+    padding-inline-start: 8px;
+    padding-inline-end: 8px;
+    border-radius: 10px;
+    outline: none;
+    background-color: rgb(241, 241, 241);
+}
+
+#roomID {
+    text-transform: uppercase;
+}
+
+#submit {
+    width: 100%;
+    height: 60px;
+    border-style: none;
+    border-radius: 10px;
+    font-size: 30px;
+    color: white;
+    background-color: #333333;
+    outline: none;
+    transition: transform 0.1s;
+    margin-top: 3%;
+}
+
+.card > span {
+    display: block;
+    height: 100%;
+}
+
+#prompt-card {
+    transform: none;
+    cursor: auto;
+}
+
+.white {
+    background-color: rgb(260, 260, 260);
+    color: rgb(48, 48, 48);
+}
+
+.black {
+    background-color: rgb(51, 51, 51);
+    color: white;
+}
+
+.black:hover {
+    transform: none;
+}
+
+.bg-modal {
+    /* width: calc((var(--vw, 1vw) * 100)); */
+    width: 100vw;
+
+    /* width: 100%; */
+    height: 100vh;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    
+    /* Toggling this will hide and show the modal box
+    I don't need to build the object every time */
+    display: none;
+    /* display: flex; */
+
+}
+
+.modal-content {
+    width: 100%;
+    height: fit-content;
+
+    margin-top: 0px;
+    /* background-color: rgb(216, 216, 216); */
+
+    justify-content: center;
+}
+
+.modal-content2 {
+    width: 100%;
+    height: fit-content;
+
+    margin-top: 0px;
+    /* background-color: rgb(216, 216, 216); */
+
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 60px;
+}
+
+#blackCards {
+    display: none;
+    /* display: flex; */
+}
+#whiteCards {
+    display: none;
+    /* display: flex; */
+}
+
+
+/* Tablet and Desktop Styles */
+@media only screen and (min-width: 551px){
+    body {
+        font-size: 22px;
+    }
+    .card {
+        width: 180px;
+        height: 270px;
+        padding: 15px;
+        border-radius: 15px;
+        font-size: 22px;
+        margin: 0.8%;
+    }
+    .drawing {
+        width: 180px;
+        height: 180px;
+    }
+    .cardInput {
+        width: 90%;
+        font-size: 22px;
+        height: 40px;
+        margin: 1%;
+    }
+    .card:hover {
+        /* transition: 0.14s; */
+        /* transform: scale(1.05); */
+        transform: scale(1);
+    }
+    #submit {
+        font-size: 20px;
+        height: 40px;
+    }
+    #submit:hover {
+        transform: scale(1.05);
+    }    
+    
+    .prompt {
+        max-width: 600px;
+        font-size: 40px;
+        float: left;
+    }
+    
+    .promptText {
+        font-size: 22px;
+    }
+    .client-wrapper {
+        max-width: 1000px;
+    }
+    .screen {
+        max-width: 90%;
+    }
+    .modal {
+        /* 3/2 ratio */
+        --cardHeight: 80vh;
+        --cardWidth: calc(var(--cardHeight) * 2/3);
+        width: 480px;
+        height: 720px;
+        
+        height: var(--cardHeight);
+        width: var(--cardWidth);
+        
+        /* font-size: 50px; */
+        font-size: calc(var(--cardHeight) * 0.08);
+        
+        padding: 30px;
+        
+        /* border-radius: 30px; */
+        border-radius: calc(var(--cardHeight) * 0.05);
+    }
+    .modal-content {
+        /* width: calc(auto + 10%); */
+        width: calc(80vh * 1.43);
+    }
+    .modal:hover {
+        transform: none;
+        cursor: auto;
+    }
+    .static:hover{
+        transform: none;
+        cursor: crosshair;
+    }
+}

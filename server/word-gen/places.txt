@@ -1,0 +1,71 @@
+observation tower
+farmhouse
+shop
+high-rise building
+chicken coop
+skyscraper
+church
+monastery
+prison
+stadium
+hardware store
+office
+kindergarten classroom
+gym
+nail salon
+marketplace
+school
+tanning salon
+tax advisor's office
+supermarket
+sausage stand
+wig store
+library
+movie theater
+daycare
+greenhouse
+cemetary
+zoo
+circus
+airplane
+airport
+amusement park
+antique shop
+apartment building
+appliance store
+aquarium
+arcade
+auditorium
+baseball diamond
+book store
+bowling alley
+camera store
+courthouse
+dentist's office
+dollar store
+emergency room
+jazz club
+kick boxing studio
+parking garage
+post office
+quilt store
+recording studio
+Walmart
+Costco
+Home Depot
+Target
+Walgreens
+CVS Pharmacy
+Lowe's
+Best Buy
+Sears
+Macy's
+Kohl's
+Toys 'R Us
+Staples
+JCPenny
+Bed Bath and Beyond
+GameStop
+PetSmart
+Foot Locker
+Sherwin-Williams
